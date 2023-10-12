@@ -2,7 +2,7 @@ import clsx from 'clsx'
 import type { ImageProps } from 'next/image'
 import NextImage from 'next/image'
 
-import { Small } from './Typography'
+import { Small } from '../typography/Typography'
 
 export default function Image({ alt, src, className, ...props }: ImageProps) {
   return (

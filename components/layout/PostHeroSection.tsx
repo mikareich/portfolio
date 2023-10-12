@@ -2,7 +2,7 @@ import NextImage from 'next/image'
 
 import type { PostMetadata } from '@/utils/contentUtils'
 
-import { TextLarge, Title } from '../base/Typography'
+import { TextLarge, Title } from '../typography/Typography'
 
 type PostHeroSectionProps = {
   title: PostMetadata['title']

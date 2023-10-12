@@ -9,8 +9,8 @@ import makeTwoDigitNumber from '@/utils/makeTwoDigitNumber'
 
 import { Context } from '../ContextProvider'
 import Container from '../layout/Container'
+import Link from '../typography/Link'
 
-import Link from './Link'
 import NavBar from './NavBar'
 
 type DrawerProps = {

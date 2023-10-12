@@ -1,14 +1,30 @@
+'use client'
+
+import { useEffect, useState } from 'react'
+
 import Image from 'next/image'
 
-import { Heading3, Title } from '../base/Typography'
+import TypewriterEffect from '../typography/TypewriterEffect'
+import { Heading3, Title } from '../typography/Typography'
 
 export default function AboutMeHeroSection() {
   const avatarSrc = '/app/avatar.svg'
+
+  const [showSubtitle, setShowSubtitle] = useState(false)
+
   return (
     <section className="mb-[50px] grid w-full grid-cols-[1fr_auto] grid-rows-[auto_auto] xs:mb-[100px]">
-      <Title className="col-span-1 self-end">Hey, I&apos;m Mika</Title>
-      <Heading3 className="self-start text-heading-color">
-        Student & programming enthusiast
+      <Title className="col-span-1 self-end">
+        <TypewriterEffect onFinishedTyping={() => setShowSubtitle(true)}>
+          Hi, I&apos;m Mika Reich
+        </TypewriterEffect>
+      </Title>
+      <Heading3 className="self-start !text-body-color">
+        {showSubtitle ? (
+          <TypewriterEffect>Student & programming enthusiast</TypewriterEffect>
+        ) : (
+          <span>&#8203;</span>
+        )}
       </Heading3>
       <picture className="col-start-2 row-span-2 row-start-1 self-center overflow-hidden rounded-full">
         <source

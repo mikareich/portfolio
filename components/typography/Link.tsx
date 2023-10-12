@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react'
 import NextLink from 'next/link'
 import { usePathname } from 'next/navigation'
 
-import Underline from '../base/Underline'
+import Underline from './Underline'
 
 // same props as NextLink but href is optional
 type LinkProps = {

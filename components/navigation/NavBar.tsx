@@ -9,8 +9,7 @@ import makeTwoDigitNumber from '@/utils/makeTwoDigitNumber'
 
 import Logo from '../base/Logo'
 import { Context } from '../ContextProvider'
-
-import Link from './Link'
+import Link from '../typography/Link'
 
 type NavBarProps = {
   routes: PageMetadata[]

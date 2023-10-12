@@ -1,8 +1,8 @@
 import { getAllPosts } from '@/utils/contentUtils'
 import makeTwoDigitNumber from '@/utils/makeTwoDigitNumber'
 
-import { Small } from '../base/Typography'
-import Link from '../navigation/Link'
+import Link from '../typography/Link'
+import { Small } from '../typography/Typography'
 
 export default async function PostList() {
   const allPosts = await getAllPosts()

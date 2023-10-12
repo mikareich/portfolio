@@ -9,8 +9,8 @@ import type Projects from '@/content/projects.json'
 import appendStyles from '@/utils/appendStyles'
 import tailwindMerge from '@/utils/tailwindMerge'
 
-import { Small, Heading5 } from '../base/Typography'
-import Link from '../navigation/Link'
+import Link from '../typography/Link'
+import { Small, Heading5 } from '../typography/Typography'
 
 import type { SkillType } from './Skill'
 import Skill from './Skill'

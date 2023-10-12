@@ -9,6 +9,7 @@ import remarkMath from 'remark-math'
 
 import HorizontalLine from '../base/HorizontalLine'
 import Image from '../base/Image'
+import Link from '../typography/Link'
 import {
   Heading1,
   Heading2,
@@ -17,9 +18,8 @@ import {
   Heading5,
   Text,
   TextLarge,
-} from '../base/Typography'
-import Underline from '../base/Underline'
-import Link from '../navigation/Link'
+} from '../typography/Typography'
+import Underline from '../typography/Underline'
 
 function ActiveLink({ children, href, ...props }: Parameters<typeof Link>[0]) {
   return (
